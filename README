@@ -1,0 +1,60 @@
+# Sistema de Agendamento
+
+Este projeto é um sistema de agendamento desenvolvido com Next.js 13, aproveitando várias tecnologias e integrações modernas. A seguir, você encontrará informações sobre as dependências do projeto, como configurá-lo e como executá-lo localmente.
+
+## Tecnologias Utilizadas
+
+- **Next.js 13**: Framework React para renderização do lado do servidor e geração estática.
+- **Framer Motion**: Biblioteca para animações.
+- **Google APIs**: Integração com o Google Agenda.
+- **Lucide React**: Conjunto de ícones para React.
+- **Next Auth**: Sistema de autenticação com login via conta Google.
+- **Next Themes**: Suporte para temas claro e escuro.
+- **React Query**: Biblioteca para gerenciamento de estado e cache de dados.
+- **Zod**: Validação e parsing de dados.
+- **Shadcn**: Componentes UI.
+- **Prisma**: ORM para interação com o banco de dados.
+- **Docker**: Containerização do banco de dados.
+
+## Configuração
+
+### Variáveis de Ambiente
+
+Certifique-se de configurar as variáveis de ambiente necessárias no arquivo `.env`. Este arquivo deve estar na raiz do projeto e deve conter todas as variáveis exigidas para a aplicação e integração com o Google Agenda.
+
+### Rodando o Projeto
+
+1. **Inicie o banco de dados com Docker:**
+   
+   No diretório raiz do projeto, execute:
+   ```bash
+   docker-compose up -d
+   ```
+
+
+2. **Instale as dependências:**
+   
+   No diretório raiz do projeto, use o pnpm para instalar as dependências do projeto: 
+   ```bash
+   pnpm install
+   ```
+
+3. **Gere o cliente Prisma:**
+   
+   Execute o comando a seguir para gerar o cliente Prisma:
+   ```bash
+   pnpm prisma generate
+   ```
+
+5. **Aplique as migrações do Prisma:**
+   
+   ```bash
+   pnpm prisma migrate dev
+   ``` 
+
+6. **Aplique as migrações do Prisma:**
+   
+   ```bash
+   pnpm run dev
+   ```   
+ 
