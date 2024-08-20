@@ -4,7 +4,7 @@ Este projeto é um sistema de agendamento desenvolvido com Next.js 13, aproveita
 
 ## Tecnologias Utilizadas
 
-- **Next.js 13**: Framework React para renderização do lado do servidor e geração estática.
+- **Next.js 14**: Framework React para renderização do lado do servidor e geração estática.
 - **Framer Motion**: Biblioteca para animações.
 - **Google APIs**: Integração com o Google Agenda.
 - **Lucide React**: Conjunto de ícones para React.
