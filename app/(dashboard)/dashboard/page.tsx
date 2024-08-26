@@ -32,14 +32,7 @@ export default async function SettingsPage() {
       {user.username ? (
         <div>
           <div className="flex items-center">
-            <a
-              href={linkAgenda}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-primary-500 underline"
-            >
-              <p className="text-lg font-semibold">{linkAgenda}</p>
-            </a>
+            <p className="text-lg font-semibold">{linkAgenda}</p>
           </div>
           <div className="grid gap-10">
             <UserNameForm user={{ id: user.id, name: user.name || "" }} />
